@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>初绽的心动</title>
+  <style>
+    /* 整体页面背景：淡淡的暖粉色，很有少女心 */
+    body {
+      font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: linear-gradient(135deg, #fff0f5 0%, #fdfbfb 100%);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    /* 中间的白色卡片 */
+    .card {
+      background-color: white;
+      padding: 35px 25px;
+      border-radius: 24px;
+      box-shadow: 0 15px 40px rgba(219, 39, 119, 0.12); /* 浪漫的玫瑰色光晕阴影 */
+      text-align: center;
+      max-width: 420px;
+      width: 100%;
+      position: relative;
+    }
+
+    /* 标题样式 */
+    h1 {
+      color: #d13673;
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+    }
+
+    /* 照片边框：给花加上一个柔和的相框效果 */
+    .photo-frame {
+      width: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      border: 4px solid #fff;
+    }
+
+    .photo-frame img {
+      width: 100%;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    /* 鼠标移上去时，花朵照片会微微放大 */
+    .photo-frame:hover img {
+      transform: scale(1.04);
+    }
+
+    /* 文案样式 */
+    p {
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    /* 标题旁边的小花动画 */
+    .flower-icon {
+      display: inline-block;
+      animation: sway 2s infinite ease-in-out;
+      font-size: 22px;
+    }
+
+    @keyframes sway {
+      0% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
+      100% { transform: rotate(-10deg); }
+    }
+
+    /* 底部的小爱心 */
+    .heart {
+      color: #ec4899;
+      font-size: 18px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>First Flowers <span class="flower-icon">🌸</span></h1>
+    
+    <!-- 这里插入花的照片 -->
+    <div class="photo-frame">
+      <img src="flower.jpg" alt="他第一次送我的花">
+    </div>
+
+    <p>
+      这是你第一次送给我的花。<br>
+      花瓣里藏着我们心动的开始，<br>
+      希望以后的每一个纪念日，<br>
+      都能有你，有花，有我们。
+    </p>
+    
+    <span class="heart">❤</span>
+  </div>
+
+</body>
+</html>
