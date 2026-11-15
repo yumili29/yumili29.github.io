@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>初绽的心动</title>
+  <title>四季与你</title>
   <style>
-    /* 整体页面背景：淡淡的暖粉色，很有少女心 */
+    /* 页面背景：接近白玫瑰的奶油色，非常柔和 */
     body {
-      font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      background: linear-gradient(135deg, #fff0f5 0%, #fdfbfb 100%);
+      font-family: 'Songti SC', 'STSong', 'SimSun', serif; /* 使用宋体，增加文艺、高级感 */
+      background-color: #f7f6f2; 
       margin: 0;
-      padding: 20px;
+      padding: 30px 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -18,96 +18,74 @@
       color: #333;
     }
 
-    /* 中间的白色卡片 */
+    /* 卡片样式：极简留白 */
     .card {
-      background-color: white;
-      padding: 35px 25px;
-      border-radius: 24px;
-      box-shadow: 0 15px 40px rgba(219, 39, 119, 0.12); /* 浪漫的玫瑰色光晕阴影 */
+      background-color: #ffffff;
+      padding: 40px 30px;
       text-align: center;
       max-width: 420px;
       width: 100%;
-      position: relative;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04); /* 极淡的阴影，让卡片浮起来 */
+      border-radius: 4px; /* 方正的圆角，显得克制、干净 */
     }
 
-    /* 标题样式 */
-    h1 {
-      color: #d13673;
-      font-size: 24px;
-      margin-top: 0;
-      margin-bottom: 25px;
-      letter-spacing: 1px;
-    }
-
-    /* 照片边框：给花加上一个柔和的相框效果 */
+    /* 照片样式：自然融入 */
     .photo-frame {
       width: 100%;
-      border-radius: 16px;
-      overflow: hidden;
-      margin-bottom: 25px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      border: 4px solid #fff;
+      margin-bottom: 35px;
     }
 
     .photo-frame img {
       width: 100%;
       display: block;
-      transition: transform 0.6s ease;
+      border-radius: 2px;
     }
 
-    /* 鼠标移上去时，花朵照片会微微放大 */
-    .photo-frame:hover img {
-      transform: scale(1.04);
-    }
-
-    /* 文案样式 */
-    p {
-      color: #555;
-      line-height: 1.8;
-      font-size: 15px;
-      margin-bottom: 0;
-    }
-
-    /* 标题旁边的小花动画 */
-    .flower-icon {
-      display: inline-block;
-      animation: sway 2s infinite ease-in-out;
+    /* 标题排版 */
+    h1 {
+      color: #2c3e50;
       font-size: 22px;
+      font-weight: normal;
+      letter-spacing: 2px; /* 字间距拉开，显得呼吸感 */
+      margin-bottom: 25px;
     }
 
-    @keyframes sway {
-      0% { transform: rotate(-10deg); }
-      50% { transform: rotate(10deg); }
-      100% { transform: rotate(-10deg); }
+    /* 文案排版 */
+    .text-content {
+      color: #555;
+      line-height: 2; /* 行距拉开 */
+      font-size: 15px;
+      letter-spacing: 1px;
     }
-
-    /* 底部的小爱心 */
-    .heart {
-      color: #ec4899;
-      font-size: 18px;
-      display: inline-block;
-      margin-top: 15px;
+    
+    /* 点缀的小绿叶 */
+    .leaf {
+      display: block;
+      margin-top: 25px;
+      font-size: 16px;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <h1>First Flowers <span class="flower-icon">🌸</span></h1>
     
-    <!-- 这里插入花的照片 -->
+    <!-- 这里插入你的照片，文件名已经改对了 -->
     <div class="photo-frame">
-      <img src="photo.jpg.jpg" alt="他第一次送我的花">
+      <img src="1.jpg" alt="他第一次送我的白玫瑰">
     </div>
 
-    <p>
-      这是你第一次送给我的花。<br>
-      花瓣里藏着我们心动的开始，<br>
-      希望以后的每一个纪念日，<br>
-      都能有你，有花，有我们。
-    </p>
+    <h1>四季与你</h1>
     
-    <span class="heart">❤</span>
+    <div class="text-content">
+      世界这么大，遇见你真好。<br>
+      希望以后的每一个纪念日，<br>
+      都能有花，有我们。
+    </div>
+
+    <span class="leaf">🌿</span>
+    
   </div>
 
 </body>
